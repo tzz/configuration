@@ -1,0 +1,22 @@
+---
+#
+# edX Configuration
+#
+# github:     https://github.com/edx/configuration
+# wiki:       https://github.com/edx/configuration/wiki
+# code style: https://github.com/edx/configuration/wiki/Ansible-Coding-Conventions
+# license:    https://github.com/edx/configuration/blob/master/LICENSE.TXT
+#
+##
+# Defaults for role jenkins_deployer
+#
+
+#
+# vars are namespace with the module name.
+#
+
+
+jenkins_deployer_plugins:
+  - { name: "multiple-scms", version: "0.5" }
+  - { name: "git", version: "2.4.1"}
+  - { name: "workflow-aggregator", version: "1.12"}
