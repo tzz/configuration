@@ -36,7 +36,7 @@
   apt:
     name: "{{ item }}"
     install_recommends: yes
-    state: present 
+    state: present
     update_cache: yes
   with_items: common_debian_pkgs
 
